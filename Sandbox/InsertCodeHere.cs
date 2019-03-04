@@ -94,7 +94,7 @@ namespace Sandbox
 
             //int r = 0;
 
-            //while (r <10)
+            //while (r < 10)
             //{
 
             //    int s = 0;
@@ -107,6 +107,46 @@ namespace Sandbox
             //    r++;
             //}
 
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    for (int j = 0; j < 10; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    for (int j = 0; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < (9-i); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                //for (int k = 0; k <= i; k++)
+                //{
+                //    Console.Write("*");
+                //}
+                int k = 0;
+                while (k <= i)
+                {
+                    Console.Write("*");
+                    k++;
+                }
+                Console.WriteLine();
+            }
 
             // The LAST line of code should be ABOVE this line
         }
